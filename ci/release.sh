@@ -26,6 +26,8 @@ do
     fi
 done
 
+echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
+
 # iterate over each stack
 for repo_stack in $STACKS_LIST
 do
