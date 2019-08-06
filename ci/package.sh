@@ -20,7 +20,7 @@ repo_list="experimental incubator stable"
 release_url="https://github.com/$TRAVIS_REPO_SLUG/releases/download"
 
 # dockerhub org for publishing stack
-export DOCKERHUB_ORG=appsody
+export DOCKERHUB_ORG=mhamwala
 
 mkdir -p $assets_dir
 
