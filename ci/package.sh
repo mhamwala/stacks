@@ -112,13 +112,14 @@ do
                             # build template archives
                             tar -cz -f $assets_dir/$template_archive -C $template_dir .
                             echo -e "--- Created template archive: $template_archive"
+                            echo "        url: file://$assets_dir/$template_archive"
                         fi
 
                         echo "      - id: $template_id" >> $index_file_v2
                         echo "        url: $release_url/$stack_id-v$stack_version/$template_archive" >> $index_file_v2
 
                         echo "      - id: $template_id" >> $index_file_test
-                        echo "        url: $release_url/$stack_id-v$stack_version/$template_archive" >> $index_file_test
+                        echo "        url: file://$assets_dir/$template_archive" >> $index_file_test
 
                         if [ $i -eq 0 ]
                         then
