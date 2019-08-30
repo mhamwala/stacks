@@ -6,7 +6,6 @@ go:
 matrix:
   include:
     - os: linux
-      dist: bionic
 
 services:
   - docker
