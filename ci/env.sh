@@ -60,7 +60,7 @@ fi
 # dockerhub org for publishing stack
 if [ -z $DOCKERHUB_ORG ]
 then
-    export DOCKERHUB_ORG=appsody
+    export DOCKERHUB_ORG=mhamwala
 fi
 
 if [ -z $GIT_BRANCH ]
