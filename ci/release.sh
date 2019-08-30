@@ -14,6 +14,7 @@ then
     . $script_dir/ext/pre_release.sh $base_dir
 fi
 
+echo "dgsjlkdgn" $assets_dir
 # iterate over each asset
 for asset in $assets_dir/*
 do
@@ -23,6 +24,8 @@ do
         mv $asset $release_dir
     fi
 done
+
+echo "End asset dir"
 
 # dockerhub/docker registry login in
 echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin $DOCKER_REGISTRY
