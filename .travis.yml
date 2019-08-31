@@ -11,7 +11,8 @@ services:
   
 script:
   - pyenv global 3.6	
-  - pip3 install pyyaml
+  - pip3 install pyyaml	
+  - ./ci/prefetch.sh	
   - . ./ci/build.sh
 
 deploy:
